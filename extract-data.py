@@ -1,50 +1,43 @@
 from mastodon import Mastodon
 
-# # Replace these with your actual values
-# client_id = "1WoctrZLWQPL77NibHMl2_Z1-S-FidIGE4mWSQ9pGgQ"
-# client_secret = "i3ad8JJsolOwhSoQt2D7ccy9H-RvZ5YeozqBtKsyIeU"
-# access_token = "UkzDemc6h67OZ3mguQWDDb0O0xfJhC750rZp_YgDOIA"
-# redirect_uri = "https://reds.com"
-# mastodon_instance_url = "https://artsculture.media/explore"
+# Configuration
+mastodon_instance_url = "https://mastodon.social/"  # Replace with your instance URL
+client_id = "1WoctrZLWQPL77NibHMl2_Z1-S-FidIGE4mWSQ9pGgQ"
+client_secret = "i3ad8JJsolOwhSoQt2D7ccy9H-RvZ5YeozqBtKsyIeU"
 
-# # Create an instance of the Mastodon class
-# mastodon = Mastodon(
-#     client_id=client_id,
-#     client_secret=client_secret,
-#     access_token=access_token,
-#     api_base_url=mastodon_instance_url
-# )
+# Initialize the Mastodon client
+mastodon = Mastodon(
+    client_id=client_id,
+    client_secret=client_secret,
+    api_base_url=mastodon_instance_url
+)
 
-# # Now you can use the mastodon object to interact with the Mastodon API
+# Authenticate Your Application (if needed)
+# Note: Depending on instance policies, you may or may not need to authenticate.
 
+# Data Extraction
+try:
+    # Retrieve the latest 10 public posts from the Mastodon instance
+    timeline = mastodon.timeline_public(limit=10)
 
-# # Fetch recent toots (textual data) from the home timeline
-# toots = mastodon.timeline_home(limit=10)
+    # Data Analysis and Processing (Example: Count hashtags)
+    hashtag_counts = {}
+    for post in timeline:
+        content = post["content"]
+        hashtags = [tag for tag in content.split() if tag.startswith("#")]
+        for hashtag in hashtags:
+            if hashtag in hashtag_counts:
+                hashtag_counts[hashtag] += 1
+            else:
+                hashtag_counts[hashtag] = 1
 
-# # Iterate through the retrieved toots and print their content and metadata
-# for toot in toots:
-#     print(f"Username: {toot['account']['username']}")
-#     print(f"Display Name: {toot['account']['display_name']}")
-#     print(f"Timestamp: {toot['created_at']}")
-#     print(f"Content: {toot['content']}\n")
+    # Print the hashtag counts
+    for hashtag, count in hashtag_counts.items():
+        print(f"{hashtag}: {count} times")
 
+except Exception as e:
+    print(f"An error occurred: {e}")
 
-# # mastodon_instance_url = "https://artsculture.media/explore"
-# mastodon_instance_url = "https://hhsocial.de/public"
-# mastodon = Mastodon(api_base_url=mastodon_instance_url)
+# Note: Implement rate limiting and pagination as needed, and handle errors robustly.
 
-# mastodon.log_in(username="karimasadykova@gmail.com", password="Sojzyn-cusmus-4hynve")
-
-# timeline = mastodon.timeline_public(limit=10)  # Retrieve the latest 10 public posts
-# for post in timeline:
-#     print(post["content"])  # Print the content of each post
-
-from mastodon import Mastodon
-
-# mastodon_instance_url = "https://hhsocial.de"
-mastodon_instance_url = "https://mastodon.social/"
-mastodon = Mastodon(api_base_url=mastodon_instance_url)
-
-timeline = mastodon.timeline_public(limit=10)  # Retrieve the latest 10 public posts
-for post in timeline:
-    print(post["content"])  # Print the content of each post
+# Remember to respect the rules and policies of the Mastodon instance.
