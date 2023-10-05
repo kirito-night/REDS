@@ -1,0 +1,6 @@
+gensim
+bs4
+Mastodon.py
+nltk
+numpy
+pandas
