@@ -2,6 +2,10 @@ from bs4 import BeautifulSoup
 from mastodon import Mastodon
 from networkx import all_shortest_paths
 import re
+from langdetect import detect
+
+
+
 def extract_mastodon(mastodon, topic : str, max_results : int = 5): 
 
     # infos à colletcer
@@ -68,3 +72,9 @@ def treat_contents(html_string:str ,present_hastag: str):
 
 
 
+def is_english(text):
+    try:
+        return detect(text) == 'en'
+    except:
+        # 处理无法检测语言的情况
+        return False

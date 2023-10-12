@@ -4,3 +4,5 @@ Mastodon.py
 nltk
 numpy
 pandas
+re
+langdetect
