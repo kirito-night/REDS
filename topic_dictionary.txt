@@ -1,1 +1,109 @@
-{"Politics": {"NationalPolitics": [], "Elections2023": [], "ForeignAffairs": [], "LawsAndRegulations": [], "LocalGovernance": []}, "Technology": {"Computing": [], "TechNews": [], "Gadgets": [], "Programming": [], "ArtificialIntelligence": []}, "Science": {"Biology": [], "QuantumPhysics": [], "OrganicChemistry": [], "Astronomy": [], "MedicalResearch": []}, "Entertainment": {"Movies": [], "Music": [], "VideoGames": [], "Theatre": [], "PopCulture": []}, "News": {"TopHeadlines": [], "BreakingNews": [], "Reportage": [], "WorldUpdates": [], "CitizenJournalism": []}, "Art and Culture": {"ModernArt": [], "ClassicLiterature": [], "MuseumVisits": [], "IndependentCinema": [], "ArtHistory": []}, "Sports": {"Football": [], "Basketball": [], "OlympicGames": [], "FavoriteTeams": [], "SportsTraining": []}, "Health": {"MentalHealth": [], "HolisticMedicine": [], "PhysicalWellness": [], "Women'sHealth": [], "MedicalResearch": []}, "Environment": {"ClimateChange": [], "Sustainability": [], "NatureProtection": [], "RenewableEnergy": [], "UrbanEcology": []}, "Travel": {"ExoticDestinations": [], "TravelTips": [], "TravelExperiences": [], "OutdoorAdventures": [], "LocalTourism": []}, "Fashion": {"FashionTrends": [], "HauteCouture": [], "FashionAccessories": [], "StreetStyles": [], "FashionEthics": []}, "Education": {"HigherEducation": [], "OnlineLearning": [], "LocalSchools": [], "InnovativePedagogy": [], "ProfessionalTraining": []}, "Food": {"CookingRecipes": [], "HealthyCuisine": [], "Gastronomy": [], "LocalRestaurants": [], "WorldCuisines": []}, "Humor": {"Jokes": [], "StandUpComedy": [], "FunnyMemes": [], "Parodies": [], "SatiricalComedy": []}, "Lifestyle": {"Wellness": [], "HealthyHabits": [], "PersonalDevelopment": [], "FamilyAndParenting": [], "BalancedLife": []}}
+{"Politics": {"Politics": [],
+ "Elections": [], 
+ "Brexit": [], 
+ "Congress": [],
+  "USpolitics": []},
+  
+   "Technology": {"Technology": [],
+    "Tech": [],
+     "ChatGPT": [],
+      "Programming": [], 
+      "AI": []}, 
+      
+      
+      "Science": {"Biology": [],
+       "Physics": [],
+        "Chemistry": [],
+         "Astronomy": [],
+          "Science": []}, 
+          
+          
+          "Entertainment": {"Movies": [],
+           "Music": [], 
+           "VideoGames": [],
+            "Theatre": [],
+             "PopCulture": []}, 
+             
+             
+             "News": {"TopHeadlines": [],
+              "BreakingNews": [],
+               "Reportage": [],
+                "News": [],
+                 "CitizenJournalism": []}, 
+                 
+                 
+                 
+                 
+                 "Art and Culture": {"ModernArt": [], 
+                 "ClassicLiterature": [],
+                  "Museum": [],
+                   "Culture": [],
+                    "ArtHistory": []},
+                    
+                    
+                     "Sports": {"Football": [], 
+                     "Basketball": [],
+                      "OlympicGames": [], 
+                      "Tennis": [],
+                       "Sports": []},
+                       
+                       
+                       
+                        "Health": {"MentalHealth": [], 
+                        "Cancer": [],
+                         "Health": [],
+                          "Women'sHealth": [],
+                           "MedicalResearch": []},
+                           
+                           
+                           
+                            "Environment": {"ClimateChange": [],
+                             "Sustainability": [],
+                              "Nature": [],
+                               "RenewableEnergy": [], 
+                               "UrbanEcology": []},
+                               
+                               
+                               
+                                "Travel": {"Adventure": [],
+                                 "TravelTips": [],
+                                  "Sights": [],
+                                   "OutdoorAdventures": [],
+                                    "Tourism": []}, 
+                                    
+                                    
+                                    
+                                    "Fashion": {"FashionTrends": [],
+                                     "HauteCouture": [],
+                                      "Beauty": [], 
+                                      "Style": [],
+                                       "FashionStyle": []},
+                                       
+                                       
+                                        "Education": {"HigherEducation": [],
+                                         "OnlineLearning": [],
+                                          "School": [],
+                                           "Teachers": [],
+                                            "University": []},
+                                            
+                                            
+                                             "Food": {"Recipe": [],
+                                              "Dinner": [],
+                                               "Gastronomy": [],
+                                                "Restaurants": [],
+                                                 "Cuisine": []}, 
+                                                 
+                                                 
+                                                 "Humor": {"Jokes": [],
+                                                  "StandUpComedy": [],
+                                                   "FunnyMemes": [],
+                                                    "Parodies": [],
+                                                     "Funny": []},
+                                                     
+                                                     
+                                                      "Lifestyle": {"Wellness": [],
+                                                       "HealthyHabits": [],
+                                                        "PersonalDevelopment": [],
+                                                         "Lifestyle": [],
+                                                          "Lifehack": []}
+                                                          }
