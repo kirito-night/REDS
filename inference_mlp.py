@@ -12,7 +12,7 @@ import torch
 #ignore warnings
 import warnings
 warnings.filterwarnings('ignore')
-
+import gradio as gr
 
 # Preprocess texts
 def preprocess(text):
@@ -73,8 +73,13 @@ def main(new_sentence):
     model.eval()
     output = model(new_sentence)
     result = label_encoder.inverse_transform([output.argmax(dim=1)])[0]
-    print(result)
     return result
+    
+   
 
 if __name__ == '__main__':
-    main(new_sentence="The president of the United States is Donald Trump")
+    demo = gr.Interface(fn=main, inputs="text", outputs="text")
+    demo.launch(server_name="0.0.0.0",share=True)
+
+
+    #main(new_sentence="The president of the United States is Donald Trump")

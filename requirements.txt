@@ -6,3 +6,9 @@ numpy
 pandas
 langdetect
 wordcloud
+matplotlib
+seaborn
+scikit-learn
+jupyter
+gradio
+torch
