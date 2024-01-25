@@ -57,7 +57,7 @@ def main(new_sentence):
     hidden_size = 32
     num_classes = 15
     # load word2vec model
-    model_word2vec =model_word2vec = Word2Vec.load("model/word2vec.model")
+    model_word2vec = Word2Vec.load("model/word2vec.model")
     # load label encoder
     with open('model/label_encoder.pkl', 'rb') as f:
         label_encoder = pickle.load(f)
